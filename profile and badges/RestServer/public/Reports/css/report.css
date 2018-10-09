@@ -1,0 +1,31 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.pageBG {
+    color: #fafafa;
+    background: linear-gradient(50deg, HSLA(205, 62%, 44%, 1), #F62D51);
+    width: 100%;
+}
+
+tr {
+	border-bottom: 0;
+}
+
+thead tr {
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.paddingtop {
+	padding-top: 30px
+}
+
+.paddingtop0 {
+	padding-top: 0px
+}

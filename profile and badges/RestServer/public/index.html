@@ -1,0 +1,50 @@
+<html>
+<head>
+		<meta name="HandheldFriendly" content="true">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+ <body>
+   <h1 style="position:absolute;top:27%;left:24%;font-size:1.5rem;"> <a href="https://www.google.com">TEST URL WORKING</a> </h1>
+   <button style="position:absolute;top:42%;left:38%;font-size:1rem;" onclick="sendData()"> Send Data </button>
+   
+   <script>
+		
+		sendData();
+		function sendData() {
+		
+				var mbp = {
+					"id": "mbp123",
+					"data": "mbp123 data",
+					"complexFormat":{
+						"one":{
+							"two":{
+								"three":"complexFormat working"
+							}
+						}
+					}
+				};
+				window.webkit.messageHandlers.boardingPassData.postMessage(mbp);
+				
+				var url = {
+					"url": "http://adasd234~`@#$%^&*()_-+=}{][\:';?><,./asdworkign.com"
+				};
+				window.webkit.messageHandlers.boardingPassUrl.postMessage(url);				
+		
+		}
+	
+		function getMBPData(item,item1) {
+			
+			print("getMBPData")
+			
+			var data="sending MBP dataFrom JS - "+item+item1;
+			return {"data":data}
+		}
+	
+   </script>
+   
+ </body>
+</html>
