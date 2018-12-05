@@ -428,10 +428,10 @@ app.post("/accountInfo", function(req, res) {
     console.log("Listening on port %s...", server.address().port);
 });*/
 
-httpServer.listen(3000,function(){
-	console.log("Listening on port 3000")
+httpServer.listen(5100,function(){
+	console.log("Listening on port 5100")
 });
 //httpsServer.listen(3005);
-httpsServer.listen(3005,function(){
-console.log("listening on port 3005");
+httpsServer.listen(5101,function(){
+console.log("listening on port 5101");
 });
