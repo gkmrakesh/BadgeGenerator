@@ -27,6 +27,7 @@ var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 
 app.use('/', express.static(__dirname + '/public'));
+app.use('/reports', express.static(__dirname + '/public/Reports'));
 
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
